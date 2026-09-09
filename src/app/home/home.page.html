@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>NjAbyssal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="home-container">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+      <p class="classification">CLASSIFIED DATABASE</p>
+      <h1>Welcome to NjAbyssal</h1>
+      <p>Access the Anomaly Database.</p>
+    </div>
+
+    <!-- Homepage Banner -->
+    <div class="home-banner">
+      <p class="warning">⚠ AUTHORIZED PERSONNEL ONLY ⚠</p>
+      <h2>ANOMALY ARCHIVE</h2>
+      <p>
+        Explore documented entities currently available
+        within the NjAbyssal containment database.
+      </p>
+
+      <ion-button routerLink="/catalog">
+        <ion-icon name="grid-outline"></ion-icon>
+        Access Catalog
+      </ion-button>
+    </div>
+
+    <!-- Featured Product -->
+    <div class="featured-section">
+
+      <h2>Featured Anomaly</h2>
+
+      <div class="featured-product" routerLink="/product/1">
+
+        <div class="featured-image">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+
+        <div>
+          <p class="classification">ANOMALY #001</p>
+          <h3>ABY-001 "The Hollow Man"</h3>
+          <p>Containment File Available</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <div class="bottom-nav">
+
+      <ion-button routerLink="/catalog">
+        <ion-icon name="grid-outline"></ion-icon>
+        <ion-label>Catalog</ion-label>
+      </ion-button>
+
+      <ion-button routerLink="/home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-button>
+
+      <ion-button routerLink="/profile">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-button>
+
+    </div>
+
+  </ion-toolbar>
+</ion-footer>

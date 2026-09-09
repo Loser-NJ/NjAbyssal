@@ -1,0 +1,7 @@
+{
+  "name": "NjAbyssal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

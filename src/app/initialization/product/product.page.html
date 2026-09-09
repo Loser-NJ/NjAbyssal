@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ANOMALY FILE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="product-container">
+
+    <div class="file-header">
+      <p>CLASSIFIED DATABASE</p>
+      <span>FILE ACCESS: AUTHORIZED</span>
+    </div>
+
+    <div class="product-image">
+      <img [src]="product.image" [alt]="product.name">
+    </div>
+
+    <div class="product-info">
+
+      <p class="classification">
+        ANOMALY #{{ product.id }}
+      </p>
+
+      <h1>{{ product.name }}</h1>
+
+      <div class="status">
+        <span>STATUS</span>
+        <strong>DOCUMENTED</strong>
+      </div>
+
+      <h3>Description</h3>
+
+      <p class="description">
+        {{ product.description }}
+      </p>
+
+      <div class="price-section">
+        <span>ACQUISITION VALUE</span>
+        <strong>₱{{ product.price | number:'1.2-2' }}</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <div class="bottom-nav">
+
+      <ion-button routerLink="/catalog">
+        <ion-icon name="grid-outline"></ion-icon>
+        <ion-label>Catalog</ion-label>
+      </ion-button>
+
+      <ion-button routerLink="/home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-button>
+
+      <ion-button routerLink="/profile">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-button>
+
+    </div>
+
+  </ion-toolbar>
+</ion-footer>
